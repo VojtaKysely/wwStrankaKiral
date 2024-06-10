@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jan Kiral</title>
-    <link rel="stylesheet" href="style.css">
-    <script language="javascript" src="script.js">      
-    </script>
-</head>
-<body>
-    <header>
-        
-    </header>
+<html>
+    <head>
+        <title>Jan Kiral</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script language="javascript" src="prevod.js">      
+        </script>
+    </head>
 
-    <main>
-        <section class="left-section">
-            <h2>První sekce</h2>
-            <p>1. </p>
-            <p>2. </p>
-        </section>
+        <body>
+            <header>
 
-        <section class="right-section">
-            <h2>Vyplňte formulář pro výpočet BMI</h2>
-            <form id="bmi-form">
-                <label for="height">Výška (cm):</label>
-                <input type="number" id="height" name="height" required>
+            </header>
 
-                <label for="weight">Hmotnost (kg):</label>
-                <input type="number" id="weight" name="weight" required>
+        <main>
+            <section class="prvni_sekce">
+                <h3>1. Co je VPN a kčemu se používa ? </h3>
+                <p> VPN je Virtual Private Network. Je to zabezpečené šifrování mezi dvěma sítěmí nebo mezi uživateli. Dokáže šifrovat data a ukryje se za falešnou IP adresu. Zajišťuje anonymitu.</p> 
+                <h3>2. Co je to AES a RSA a k čemu slouží ?</h3>                
+                <p> Jsou to šifrovací algoritmy, které se použivájí k zabezpečení dat. AES je symetrická šifra, která se používá pro šifrování velkých datových objemů. RSA je asymetrická používá se pro šifrování klíču, podpisů atd. </p>
+                <h3>3. Jaký je rozdíl mezi JavaScript a PHP ?</h3>
+                <p>Jsou to programovaci jazyky. Java se používa pro dynamické prostředí stranky a PHP zajištuje obsah stranky</p>
+                <h3>4. Jaký je rozdíl mezi symetrickým a asymetrickým šifrování ?</h3>
+                <p> Rozdíl je v kliči u symetrického se používá pro dešifrování a šifrování stejný klíč. U asymetrickéh se použivájí dva klíče jeden slouží pro šifrovaní ten je věřejný a soukromý pro dešifrování.</p>
+                <h3>5. Co to je DNS a k čemu slouží ?</h3>
+                <p> Slouží k převodu domény na IP adres</p>
+                <h3>6. K čemu slouží respozivní web ?</h3>
+                <p>Je to designové webu a jeho prostředí přizpůsobem na různa zařízení mobil, tablet, atd. . Zobrazení je přizpůsobeno dle velikosti.</p>
+                <h3>7. Co znamená zkratka CMS ?</h3>
+                <p>Content managment system, je to systém pro správu obsahu, dokumentu</p>
+                <h3>8. Co je to digitální a elektronický podpis ?</h3>
+                <p>Slouží pro ověřování identyty , mohou se podpisovat dokumenty. Slouži jako určeni totožnosti dokumentu a pravosti </p>
+                <h3>9. Jaký je rozdíl mezi IP a MAC adresou ? .</h3>
+                <p>IP je 10.136.4.123 MAC je F0-9E-4A-A6-A4-46 Ip je jedinečný identifikator, který použiva internetovou síť a komunikuji mezi zařízením v síti. MAC je jedinečný identifikátor HW zařízení, rozhraní pro přistup k internetu více sitových HW v PC.</p>
+                <h3>10. K čemu slouží HTML atributy a placeholder, required, autofocus a name ?</h3>
+                <p> placeholder slouži pro zobrazení textu ve formulaři po kliknutí  text zmizí, required je atribut u formuláře, který musí být vyplněn, autofocus při načtení stranky se zaměří na konkretní vstup, name slouží k identifikaci a data odesílá k přislušným kličům ve formuláři.</p>
+            </section>
 
-                <button type="button" id="callculationButton" onclick="cal()">Vypočítat BMI</button>
+            <section class="druha_sekce">
+                <h2>Vyplňte formulář pro převod jednotek Pascalu na atmosferu a bary</h2>
+            <form id="prevod-form">
+                <label for="pascal">Pascal (Pa):</label>
+                <input type="number" id="pascal" name="pascal" required>
+
+              
+
+                <button type="button" id="callculationButton" onclick="cal()">Vypočítat převod</button>
             </form>
             <div id="result">
                  <p id="resultID"></p>
                 <!-- Zde se zobrazí výsledek -->
             </div>
-        </section>
+            </section>
+        </main>   
+        
+        <footer>
+            <p>Jan Kiral UČO 65375</p>
+        </footer>
 
-        <section>
-            <div id="contact">
-            <h2>Kontakt</h2>
-            <p>Kontaktujte mě na emailu: jan@example.com</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Moje webová stránka</p>
-    </footer>
-</body>
-</html>
+    </body>
+</html> 

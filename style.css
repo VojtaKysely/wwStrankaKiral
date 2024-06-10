@@ -1,75 +1,42 @@
 body {
-    font-family: 'Arial, Helvetica, sans-serif'
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #ebeaea;
 }
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
+.prvni_sekce{
+    display: flex;
+    background-color: #0792f5;
+    width: 100%;
     text-align: center;
+    flex-direction: column;
 }
-
-main {
+.druha_sekce{
+    display: flex;
+    background-color: #e9093d;
+    width: 100%;
+    text-align: center;
+    align-items: center; 
+    flex-direction: column;
     
 }
 
-section {
-    margin: 1em 0;
-}
-
-.left-section { 
-    background-color: #fce3fd;
-    display: flex;
-    width: 100%;
-      
-}
-.right-section {
-    background-color: #fce3fd;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    text-align: center;   
-    }
-
 form {
-   display: flex;
-   flex-direction: column;
-}
-
-label, input, button {
-    margin-bottom: 1em;
-}
-
-
-
-#result {
-    margin-top: 1em;
-    font-size: 1.2em;
-    color: #333;
-}
-
-
-footer {
-    background-color: #333;
-    color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #dc1010;
+    border-radius: 5px;
+    background-color: #ea0bb2;
 
-#contact {
-    background-color: lightblue;
-    padding: 20px;
-    border: 1px solid #000;
-    text-align: center;
 }
 
 button {
+    text-align: center;
     padding: 0.5em;
     background-color: #333;
     color: white;
@@ -78,6 +45,20 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
+#result {
+    margin: auto;
+    display: flexi;
+    margin-top: 25px;
+    font-size: 40px;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: sticky;
+    padding-left: 5%;
+    padding-right: 5%;
+    bottom: 0;
 }
